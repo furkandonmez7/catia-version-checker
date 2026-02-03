@@ -167,7 +167,14 @@ reader.readAsText(file.slice(0,512000),'latin1');
 };
 </script>
 
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
 </body>
 </html>
+
 
 
